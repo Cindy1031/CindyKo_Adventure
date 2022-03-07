@@ -1,0 +1,74 @@
+/* This changes three of the default styles and many webdesigners include this in the top of every style they create. */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --black: #000;
+  --background: gainsboro;
+}
+
+body {
+  color: var(--black);
+  background: var(--background);
+  text-align: justify;
+}
+
+h1{
+  background: #8756c7;
+  font-size: 60px;
+  color: black;
+}
+
+.box {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+  column-gap: 2rem;
+  line-height: 1.4rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+.content {
+}
+.row {
+  background: white;
+}
+#header {
+  background: #8756c7;
+}
+#footer {
+  background: #8756c7;
+}
+.hero-image {
+  background-image: url("house.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  color: white;
+  min-height: 700px;
+  min-width: 900px;
+}
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 4rem;
+  font-weight: bold;
+}
+@media (min-width: 600px) {
+.box {
+  column-count: 2;
+  text-align: left;
+}
+}
